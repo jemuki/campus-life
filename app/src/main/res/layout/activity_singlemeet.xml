@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".singlemeet"
+    android:background="#15202B">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="10dp"
+            android:id="@+id/smeettoback"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8899A6"
+            android:text="jereson Muchui"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:id="@+id/userz"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/themeetpost"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:textColor="#8899A6"
+            android:text="This is my dummy post"/>
+
+
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/imageswitcher"
+            style="@style/Roundedsquare"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isback"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_baseline_navigate_before_24"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isnext"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+            </LinearLayout>
+
+
+        </ImageSwitcher>
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/likemeet"
+                android:src="@drawable/ic_baseline_favorite_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/meetnumlikes"
+                android:textColor="#8899A6"
+                android:textAlignment="center"
+                android:text="1400"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/meetpost"
+                android:src="@drawable/ic_baseline_comment_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/meetnumcomments"
+                android:textColor="#8899A6"
+                android:textAlignment="center"
+                android:text="1400"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8899A6"
+            android:textSize="20sp"
+            android:background="#192734"
+            android:textAlignment="center"
+            android:text="No comments yet"
+            android:id="@+id/nok"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclermeetcomments"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/comments"/>
+
+
+    </LinearLayout>
+</ScrollView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="50dp"
+        android:minHeight="50dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#192734">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="add comment"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#8899A6"
+            android:background="#192734"
+            android:id="@+id/addmeetcom"
+            android:textColorHint="#8899A6"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:background="#192734"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/nowsendmeetcom"
+            android:layout_marginLeft="280dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

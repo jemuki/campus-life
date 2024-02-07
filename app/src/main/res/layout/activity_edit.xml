@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit"
+    android:background="#15202B">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/edittoback"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/dppreview2"
+            android:background="#192734"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_baseline_add_a_photo_24"
+                android:id="@+id/choosedp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/senddp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:src="@drawable/dpsend"/>
+        </LinearLayout>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginTop="10dp">
+             <EditText
+                 android:layout_width="300dp"
+                 android:layout_height="wrap_content"
+                android:hint="edit username"
+                 android:textAlignment="center"
+                 android:textSize="20sp"
+                 android:id="@+id/eusername"
+                 android:textColorHint="#8899A6"
+                 android:textColor="#8899A6"/>
+             <ImageButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@null"
+                 android:src="@drawable/dpsend"
+                 android:id="@+id/seusername"
+                 android:layout_gravity="center_vertical"/>
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="edit bio"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:id="@+id/ebio"
+                android:textColorHint="#8899A6"
+                android:textColor="#8899A6"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/dpsend"
+                android:id="@+id/sebio"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="edit email"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:id="@+id/eemail"
+                android:textColorHint="#8899A6"
+                android:textColor="#8899A6"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/dpsend"
+                android:id="@+id/semail"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#15202B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#15202B"
+        android:paddingTop="10dp">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/cover"
+                android:padding="5dp"
+                android:src="@drawable/tesla"
+                app:shapeAppearance="@style/Roundedsquare" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zetech university"
+            android:id="@+id/name"
+            android:textColor="#8899A6"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invent your future"
+            android:id="@+id/slogan"
+            android:textColor="#8899A6"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

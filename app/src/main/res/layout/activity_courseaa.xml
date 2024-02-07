@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".courseaa"
+    android:id="@+id/drawerLayoutcaa"
+    android:background="#15202B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="#192734"
+                android:text="programmes"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="#8899A6"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclercaa"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_school"/>
+        </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+    android:id="@+id/navView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+        android:background="#15202B"
+    app:menu="@menu/drawer_list"
+    app:headerLayout="@layout/nav_header"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
